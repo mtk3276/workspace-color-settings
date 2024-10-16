@@ -7,13 +7,15 @@ import StyledSettingsButton from './StyledSettingsButton';
 import './styles.css';
 
 function Navbar() {
+  const buttonColor = 'var(--secondary-color)';
+
   return (
     <AppBar id='navbar' position='sticky'>
       <Container maxWidth='xl'>
         <Toolbar disableGutters>
-          <StyledHomeButton fill='white' />
-          <StyledWorksheetButton fill='white' />
-          <StyledSettingsButton fill='white' />
+          <StyledHomeButton fill={buttonColor} />
+          <StyledWorksheetButton fill={buttonColor} />
+          <StyledSettingsButton fill={buttonColor} />
         </Toolbar>
       </Container>
     </AppBar>
