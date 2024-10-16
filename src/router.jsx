@@ -1,4 +1,5 @@
-import App from "@/App.jsx";
+import App from "@/App";
+import Home from "@/routes/Home";
 
 const routes = [
     {
@@ -7,6 +8,7 @@ const routes = [
         children: [
             {
                 index: true,
+                element: <Home />
             },
             {
                 path: "/worksheet",
