@@ -1,5 +1,6 @@
 import App from "@/App";
 import Home from "@/routes/Home";
+import Worksheet from "@/routes/Worksheet";
 
 const routes = [
     {
@@ -12,6 +13,7 @@ const routes = [
             },
             {
                 path: "/worksheet",
+                element: <Worksheet />
             },
             {
                 path: "/settings",
